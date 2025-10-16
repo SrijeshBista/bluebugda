@@ -1,0 +1,214 @@
+header{
+    // margin-top: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1111;
+    background-color: white;
+    margin-top: 0;
+    .nav-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0px;
+        .logo{
+            width: 150px;
+            img{
+                width: 100%;
+            }
+        }
+        .nav-bar{
+            ul{
+                li{
+                    display: inline-block;
+                    margin-right: 15px;
+                    font-size: 20px;
+                    font-family: var(--secondary-font);
+                    font-weight: 600;
+                    &:hover{
+                        transform: scale(1.1);
+                        transition: 300ms ease-in-out;
+                        border-bottom: 2px solid black;
+                    }
+                }
+            }
+        }
+        .signup-loginbtn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            button{
+                font-size: 16px;
+                padding: 7px 20px;
+                border-radius: 20px;
+                border: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                font-weight: 600;
+                &:hover{
+                    transition: 300ms ease-in-out;
+                    transform: scale(1.1);
+                    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                }
+            }
+        }
+        .hambar{
+            display: none;
+            button{
+                padding: 10px 20px;
+                font-size: 25px;
+                background-color: transparent;
+                color: black;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+//  resonsive for mobile 
+@media screen and (max-width : 769px) {
+    header{
+        .nav-main{
+            padding: 17px 0;
+            .logo{
+                width: 120px;
+               img{
+                width: 100%;
+               }
+            }
+            .nav-bar{
+                display: none;
+            }
+            .signup-loginbtn{
+                .signup{
+                    display: none;
+                }
+                
+                .loginbtn{
+                    margin-left: 80px;
+                }
+            }
+            .hambar{
+                display: block;
+            }
+        }
+    }
+    .closebtn{
+        text-align: end;
+        button{
+            padding: 10px 20px;
+            font-size: 30px;
+            color: #121212;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+        }
+    }
+    .navs-main{
+        text-align: center;
+        .navs-bar{
+            li{
+                margin: 20px 0;
+                font-size: 30px;
+                font-weight: 600;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 300ms ease-in-out;
+                }
+            }
+        }
+        .signu-btn{
+            button{
+                font-size: 20px;
+                padding: 7px 20px;
+                border-radius: 20px;
+                border: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                font-weight: 600;
+                margin-bottom: 30px;
+                &:hover{
+                    transition: 300ms ease-in-out;
+                    transform: scale(1.1);
+                    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                }
+            }
+        }
+    }
+}
+
+// responsive for tab 
+@media screen  and (min-width: 769px) and (max-width:1200px) {
+    header{
+        .nav-main{
+            padding: 17px 0;
+            .logo{
+                h1{
+                    font-size: 20px;
+                }
+            }
+            .nav-bar{
+                display: none;
+            }
+            .signup-loginbtn{
+                margin-left: 50%;
+                .signup{
+                    display: none;
+                }
+                
+                .loginbtn{
+                    margin-left: 80px;
+                }
+            }
+            .hambar{
+                display: block;
+            }
+        }
+    }
+    .closebtn{
+        text-align: end;
+        button{
+            padding: 10px 20px;
+            font-size: 30px;
+            color: #121212;
+            background-color: transparent;
+            border: none;
+            font-weight: 600;
+        }
+    }
+    .navs-main{
+        text-align: center;
+        .navs-bar{
+            li{
+                margin: 20px 0;
+                font-size: 30px;
+                font-weight: 600;
+                list-style: none;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 300ms ease-in-out;
+                }
+            }
+        }
+        .signu-btn{
+            button{
+                font-size: 20px;
+                padding: 7px 20px;
+                border-radius: 20px;
+                border: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                font-weight: 600;
+                margin-bottom: 30px;
+                &:hover{
+                    transition: 300ms ease-in-out;
+                    transform: scale(1.1);
+                    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+                }
+            }
+        }
+    }
+}

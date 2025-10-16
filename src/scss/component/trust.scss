@@ -1,0 +1,130 @@
+#trust-section{
+    height: fit-content;
+    .trust-main{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        .trust-left{
+            width: 50%;
+            img{
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 64px;
+            }
+        }
+        .trust-right{
+            width: 49%;
+            .trust-title{
+                h1{
+                    font-size: 3rem;
+                    margin-top: 7%;
+                    font-family: var(--secondary-font);
+                    span{
+                        color: #1f5773; 
+                        font-family: cursive;  
+                    }
+                }
+            }
+            .trust-des{
+                width: 500px;
+                margin: 30px 0;
+                p{
+                    font-size: 20px;
+                    width: 100%;
+                    color: gray;
+                }
+            }
+            .trust-btn{
+                button{
+                    border: none;
+                    background-color: var(--second-color);
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    border-radius: 20px;
+                    padding: 10px 20px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    &:hover{
+                        transition:300ms ease-in-out;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsive for mobile 
+@media screen and (max-width:769px) {
+    #trust-section{
+        height: fit-content;
+        .trust-main{
+            flex-direction: column;
+            .trust-left{
+                width: 100%;
+                img{
+                    height: 300px;
+                }
+            }
+            .trust-right{
+                width: 100%;
+                .trust-title{
+                    h1{
+                        font-size: 2rem;
+                    }
+                }
+                .trust-des{
+                    width: 100%;
+                    p{
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+                .trust-btn{
+                    text-align: center;
+                    button{
+                        width: 90%;
+                        &:hover{
+                            transition:300ms ease-in-out;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:769px) and (max-width:1200px) {
+    #trust-section{
+        .trust-main{
+            flex-direction: column;
+            .trust-left{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .trust-right{
+                width: 100%;
+                .trust-title{
+                    h1{
+                        font-size: 3.5rem;
+                    }
+                }
+                .trust-des{
+                    width: 100%;
+                    p{
+                        width: 100%;
+                        font-size: 25px;
+                    }
+                }
+                .trust-btn{
+                    button{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

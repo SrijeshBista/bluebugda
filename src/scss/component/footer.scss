@@ -1,0 +1,232 @@
+footer{
+    height: fit-content;
+    border-top: 3px solid black;
+    margin-top: 60px;
+    padding: 40px 0;
+    .footer-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        .logo{
+            width: 200px;
+           img{
+            width: 100%;
+           }
+        }
+        .footer-left{
+            width: 40%;
+
+            .footer-des{
+                p{
+                    font-size: 16px;
+                    margin:20px 10px ;
+                }
+            }
+            .footer-social-media{
+               
+
+               
+                button{
+                    font-size: 30px;
+                     margin-right: 20px;
+                     border: none;
+                     background-color: transparent;
+                     color: black;
+                     cursor: pointer;
+                }
+            }
+        }
+        .footer-right{
+            width: 50%;
+            .footer-nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                ul{
+                    h1{
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 600;
+                        font-family: var(--secondary-font);
+                    }
+                    li{
+                        list-style: none;
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin: 5px 0;
+                        cursor: pointer;
+                        &:hover{
+                              transform: scale(1.2);
+                              transition: 300ms ease-in-out;  
+                        }
+                    }
+                }
+                .contact{
+                    li{
+                        &:hover{
+                            transform: scale(1);
+                            cursor: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .copyright{
+        margin-top: 20px;
+        span{
+            color: #5468FF;
+        }
+    }
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1200px){
+footer{
+    .footer-main{
+        flex-direction: column;
+        // width: 100%;
+        .footer-left{
+            width: 100%;
+
+            .footer-des{
+                width: 100%;
+                p{
+                    width: 100%;
+                    font-size: 20px;
+                  
+                }
+            }
+            .footer-social-media{              
+                button{
+                    font-size: 40px;
+                     margin-right: 20px;
+                     border: none;
+                     background-color: transparent;
+                     color: black;
+                     cursor: pointer;
+                }
+            }
+        }
+        .footer-right{
+            width: 100%;
+            margin-top: 20px;
+            .footer-nav{
+            gap: 39px;
+
+                ul{
+                    h1{
+                        margin: 0;
+                        font-size: 35px;
+                        font-weight: 600;
+                    }
+                    li{
+                        list-style: none;
+                        font-size: 25px;
+                        font-weight: 400;
+                        margin: 5px 0;
+                        cursor: pointer;
+                        &:hover{
+                              transform: scale(1.2);
+                              transition: 300ms ease-in-out;  
+                        }
+                    }
+                }
+                .contact{
+
+                    li{
+                        &:hover{
+                            transform: scale(1);
+                            cursor: auto;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .copyright{
+        margin-top: 20px;
+        span{
+            color: #5468FF;
+        }
+    }
+}
+}
+@media screen and (max-width:769px){
+    footer{
+             
+        .footer-main{
+            flex-direction: column;
+            .logo{
+                width: 150px;
+               img{
+                width: 100%;
+               }
+            }
+            .footer-left{
+                width: 100%;
+               
+    
+                .footer-des{
+                   
+                }
+                .footer-social-media{
+                   
+    
+                   
+                    button{
+                        font-size: 30px;
+                         margin-right: 20px;
+                         border: none;
+                         
+                    }
+                }
+            }
+            .footer-right{
+                width: 100%;
+                .footer-nav{
+                    flex-direction: column;
+                    ul{
+                        h1{
+                            margin: 0;
+                            font-size: 25px;
+                            font-weight: 600;
+                            margin-left: 5px;
+                        }
+                        li{
+                            list-style: none;
+                            font-size: 18px;
+                            font-weight: 400;
+                            margin: 5px 0;
+                            margin-left: 10px;
+
+                            cursor: pointer;
+                            &:hover{
+                                  transform: scale(1.1);
+                                  transition: 300ms ease-in-out;  
+                            }
+                        }
+                    }
+                    .contact{
+                        li{
+                            &:hover{
+                                transform: scale(1);
+                                cursor: auto;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+        .copyright{
+            margin-top: 20px;
+            span{
+                color: #5468FF;
+            }
+        }
+    }
+}
