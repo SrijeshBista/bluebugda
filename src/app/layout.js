@@ -2,8 +2,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./component/NavBar";
 import Footer from "./component/Footer";
-import commonscss from "../scss/setup/common.scss"
-import setup from "../scss/setup/setup.scss"
+import "../scss/setup/common.scss";
+import "../scss/setup/setup.scss";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -22,10 +23,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Load Nunito Sans and Comfortaa from Google Fonts */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Comfortaa:wght@300..700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <NavBar></NavBar>
+        <NavBar />
         {children}
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );
