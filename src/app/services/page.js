@@ -1,5 +1,5 @@
 import React from 'react'
-import servicespagescss from '../../scss/services/services-page.scss'; 
+import "@/scss/services/services-page.scss";
 import { FaArrowRight } from "react-icons/fa";
 import Link from 'next/link';
 import slug from './[slug]/page.js'

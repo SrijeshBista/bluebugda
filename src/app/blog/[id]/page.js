@@ -1,16 +1,18 @@
-// [id]/page.js
-"use client";
+// Blog detail page (server component for static export)
 import React from "react";
-import { useParams } from "next/navigation";
 
 const blogData = {
   "1": { title: "Top IT Trends to Watch in 2024", img: "/img.jpeg", des: "Full blog description..." },
   "2": { title: "How AI is Shaping the Future of Tech", img: "/img.jpeg", des: "Full blog description..." },
 };
 
-const BlogPost = () => {
-  const { id } = useParams();
-  const blog = blogData[id];
+// ✅ Add static params for export
+export async function generateStaticParams() {
+  return Object.keys(blogData).map((id) => ({ id }));
+}
+
+export default function BlogPost({ params }) {
+  const blog = blogData[params.id];
 
   if (!blog) return <h1>Blog Not Found</h1>;
 
@@ -21,6 +23,4 @@ const BlogPost = () => {
       <p>{blog.des}</p>
     </section>
   );
-};
-
-export default BlogPost;
+}
